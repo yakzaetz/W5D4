@@ -11,7 +11,7 @@
 class Enrollment < ApplicationRecord
 
     belongs_to :course,
-        foreign_key: :course_id,
+        foreign_key: :pointer_to_course_id,
         class_name: :Course,
         primary_key: :id
 
