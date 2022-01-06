@@ -16,7 +16,7 @@ class Enrollment < ApplicationRecord
         primary_key: :id
 
     belongs_to :user,
-        foreign_key: :user_id,
+        foreign_key: :student_id,
         class_name: :User,
         primary_key: :id    
     

@@ -10,4 +10,10 @@
 #  prereq_id     :integer
 #
 class Course < ApplicationRecord
+
+    belongs_to :instructor,
+        primary_key: :id,
+        foreign_key: :instructor_id,
+        class_name: :User
+
 end
